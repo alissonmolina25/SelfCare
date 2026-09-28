@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Paleta principal de SelfCare -->
+    <color name="warn_white">#FAF9F6</color>
+    <color name="soft_cream">#F1FE7DC</color>
+    <color name="sage_green">#7D8B73</color>
+    <color name="soft_blue">#8FA9C4</color>
+    <color name="dark_blue">#35445A</color>
+
+
+    <!--Colors auxiliaries-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_text">#667085</color>
+
+</resources>

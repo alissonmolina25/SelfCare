@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_welcome"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:src="@drawable/logo_selfcare"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="Logo de SelfCare" />
+
+    <TextView
+        android:id="@+id/txtFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Pequeñas acciones,&#10;grandes cambios"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#35445A"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:backgroundTint="#7D8B73"
+        android:text="Comenzar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Un mejor tú, todos los días"
+        android:textColor="#8FA9C4"
+        android:textSize="13sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+</LinearLayout>
