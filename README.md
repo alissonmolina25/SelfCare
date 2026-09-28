@@ -4,9 +4,9 @@ SelfCare es una aplicación móvil enfocada en el autocuidado y el bienestar per
 
 ## Integrantes
 
-- Vanessa Castaneda
-- Andres Rivera
-- Arnoldo Cardoza
+- Wendy Martinez
+- Fatima Vasquez
+- Alisson Molina
 
 ## Tecnologías utilizadas
 
