@@ -1,67 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="@drawable/background_welcome"
-    android:paddingStart="28dp"
-    android:paddingEnd="28dp">
+    android:background="#FAF9F5"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="45dp"
+    android:paddingBottom="25dp">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="55dp" />
-
+    <!-- LOGO DE SELFCARE -->
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="290dp"
-        android:layout_height="290dp"
-        android:src="@drawable/logo_selfcare"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Logo SelfCare"
         android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:contentDescription="Logo de SelfCare" />
+        android:src="@drawable/logo_selfcare" />
 
+    <!-- FRASE PRINCIPAL -->
     <TextView
         android:id="@+id/txtFrase"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Pequeñas acciones,&#10;grandes cambios"
-        android:textAlignment="center"
+        android:layout_marginTop="15dp"
         android:gravity="center"
-        android:textColor="#35445A"
-        android:textSize="20sp"
+        android:text="Pequeñas acciones,&#10;grandes cambios"
+        android:textColor="#344A66"
+        android:textSize="27sp"
         android:textStyle="italic" />
 
+    <!-- ESPACIO FLEXIBLE -->
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <!-- BOTÓN COMENZAR -->
     <Button
         android:id="@+id/btnComenzar"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:backgroundTint="#7D8B73"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#3D526F"
         android:text="Comenzar"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
+    <!-- ADORNO -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Un mejor tú, todos los días"
-        android:textColor="#8FA9C4"
-        android:textSize="13sp" />
-
-    <Space
         android:layout_width="match_parent"
-        android:layout_height="35dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="────  ✦  ────"
+        android:textColor="#91A8A0"
+        android:textSize="18sp" />
+
+    <!-- FRASE INFERIOR -->
+    <TextView
+        android:id="@+id/txtFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Un mejor tú, todos los días"
+        android:textColor="#344A66"
+        android:textSize="20sp" />
 
 </LinearLayout>
