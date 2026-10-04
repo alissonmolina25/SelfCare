@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Selfcare"
+rootProject.name = "SelfCare"
 include(":app")

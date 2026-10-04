@@ -1,142 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
     android:background="#FAF9F6">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/logo_selfcare"
+        android:contentDescription="Logo de SelfCare"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingStart="28dp"
-        android:paddingEnd="28dp"
-        android:paddingBottom="30dp">
+        android:text="Bienvenido a SelfCare"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#35454A"
+        android:layout_marginTop="20dp" />
 
-        <!-- Regresar -->
-        <TextView
-            android:id="@+id/btnVolver"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginTop="25dp"
-            android:gravity="center"
-            android:text="Atrás"
-            android:textColor="#35445A"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu bienestar comienza aquí"
+        android:textSize="16sp"
+        android:textColor="#7A8582"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="35dp" />
 
-        <!-- Título -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:text="¡Bienvenida de nuevo!"
-            android:textColor="#35445A"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:padding="14dp" />
 
-        <!-- Subtítulo -->
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:layout_marginTop="12dp" />
 
-        <!-- Correo electrónico -->
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="Iniciar sesión"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8FA98E"
+        android:layout_marginTop="25dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="Tu bienestar también importa"
-            android:textColor="#8FA9C4"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txtRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:textSize="15sp"
+        android:textColor="#657D68"
+        android:layout_marginTop="18dp" />
 
-        <EditText
-            android:id="@+id/etCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginTop="45dp"
-            android:background="@drawable/input_background"
-            android:hint="Correo electrónico"
-            android:inputType="textEmailAddress"
-            android:paddingStart="18dp"
-            android:paddingEnd="18dp"
-            android:textColor="#35445A"
-            android:textColorHint="#8FA9C4"
-            android:textSize="15sp" />
-
-        <!-- Contraseña -->
-        <EditText
-            android:id="@+id/etContrasena"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/input_background"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:paddingStart="18dp"
-            android:paddingEnd="18dp"
-            android:textColor="#35445A"
-            android:textColorHint="#8FA9C4"
-            android:textSize="15sp" />
-
-        <!-- Recordarme -->
-        <CheckBox
-            android:id="@+id/checkRecordarme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:buttonTint="#7D8B73"
-            android:text="Recordarme"
-            android:textColor="#35445A"
-            android:textSize="14sp" />
-
-        <!-- Recuperar contraseña -->
-        <TextView
-            android:id="@+id/txtOlvidaste"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:text="¿Olvidaste tu contraseña?"
-            android:textColor="#35445A"
-            android:textSize="13sp" />
-
-        <!-- Botón verde -->
-        <Button
-            android:id="@+id/btnIniciarSesion"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#7D8B73"
-            android:text="Iniciar sesión"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <!-- Separador -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:gravity="center"
-            android:text="────────   o continúa con   ────────"
-            android:textColor="#8FA9C4"
-            android:textSize="12sp" />
-
-        <!-- Crear cuenta -->
-        <TextView
-            android:id="@+id/txtRegistrarse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:text="¿No tienes una cuenta? Regístrate"
-            android:textColor="#35445A"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>
