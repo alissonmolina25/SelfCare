@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AABBAE"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SelfCare"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo te sientes hoy?"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu estado de ánimo."
+            android:textSize="15sp"
+            android:textColor="#354D3E"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#819A88" />
+
+        <RadioGroup
+            android:id="@+id/grupoEmociones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="18dp">
+
+            <RadioButton
+                android:id="@+id/radioFeliz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😊  Feliz"
+                android:textSize="17sp"
+                android:textColor="#293E33"
+                android:buttonTint="#496653"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/radioTranquila"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😌  Tranquila"
+                android:textSize="17sp"
+                android:textColor="#293E33"
+                android:buttonTint="#496653"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/radioTriste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😔  Triste"
+                android:textSize="17sp"
+                android:textColor="#293E33"
+                android:buttonTint="#496653"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/radioAnsiosa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😟  Ansiosa"
+                android:textSize="17sp"
+                android:textColor="#293E33"
+                android:buttonTint="#496653"
+                android:padding="10dp" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#819A88" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo estuvo tu día?"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="14dp" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:gravity="top"
+            android:padding="16dp"
+            android:hint="Escribe aquí..."
+            android:textColor="#293E33"
+            android:textColorHint="#66796D"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:backgroundTint="#496653" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:text="Guardar mi día"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#496653" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:text="Volver al inicio"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#293E33"
+            android:backgroundTint="#DDE5DC" />
+
+    </LinearLayout>
+</ScrollView>
