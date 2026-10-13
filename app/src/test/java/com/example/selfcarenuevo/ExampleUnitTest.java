@@ -1,4 +1,4 @@
-package com.example.selfcare;
+package com.example.selfcarenuevo;
 
 import org.junit.Test;
 

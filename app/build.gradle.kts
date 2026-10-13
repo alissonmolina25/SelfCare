@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.selfcare"
+    namespace = "com.example.selfcarenuevo"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.selfcare"
+        applicationId = "com.example.selfcarenuevo"
         minSdk = 24
         targetSdk = 37
         versionCode = 1

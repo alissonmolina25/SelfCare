@@ -1,4 +1,4 @@
-package com.example.selfcare;
+package com.example.selfcarenuevo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +16,11 @@ public class MainActivity extends AppCompatActivity {
         Button btnComenzar = findViewById(R.id.btnComenzar);
 
         btnComenzar.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    LoginActivity.class
+            );
+
             startActivity(intent);
         });
     }

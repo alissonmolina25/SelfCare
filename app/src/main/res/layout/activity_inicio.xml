@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AABBAE"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo_selfcare"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Logo de SelfCare" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SelfCare"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#293E33"
+                android:layout_marginStart="12dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hola, bienvenida"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textSize="15sp"
+            android:textColor="#354D3E"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="25dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#819A88" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado de ánimo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registra cómo te sientes hoy."
+            android:textSize="15sp"
+            android:textColor="#354D3E"
+            android:layout_marginTop="7dp" />
+
+        <Button
+            android:id="@+id/btnEstadoAnimo"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="26dp"
+            android:text="Registrar mi estado"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#496653" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#819A88" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi diario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Revisa tus registros anteriores."
+            android:textSize="15sp"
+            android:textColor="#354D3E"
+            android:layout_marginTop="7dp" />
+
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="26dp"
+            android:text="Ver mi historial"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#496653" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#819A88" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis hábitos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organiza tus hábitos y cuida de ti cada día."
+            android:textSize="15sp"
+            android:textColor="#354D3E"
+            android:layout_marginTop="7dp" />
+
+        <Button
+            android:id="@+id/btnHabitos"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="26dp"
+            android:text="Ver mis hábitos"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#496653" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#819A88" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi último registro"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#293E33"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/txtUltimoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sin registros todavía"
+            android:textSize="16sp"
+            android:textColor="#354D3E"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="#293E33"
+            android:backgroundTint="#DDE5DC" />
+
+    </LinearLayout>
+</ScrollView>
